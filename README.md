@@ -15,7 +15,7 @@ Just Fun. Don't take it seriously.
 
 ## 코드 설명
 #### auto-like&#46;py
-Automatically clicks the Like button using the desktop Chrome browser and Selenium.  
+Automatically clicks the Like button using the `desktop chrome browser` and `selenium`.  
 
 *Problem* : If too many requests are sent, error 429 occurs. then you will no longer be able to send requests for about a day. I don't know the exact limit of 'too many requests'.
   
@@ -25,13 +25,13 @@ Selectively click the Like button by browsing two or more tag combinations.
 *Problem* : Same with auto-like&#46;py
 
 #### auto-like-mobile-v1&#46;py
-Automatically click the Like button through Instagram application using Android emulator.  
+Automatically click the Like button through `Instagram application` using `Android emulator`.  
 Selenium is not required.  
 
 *Problem* : Not fun, Not cool, Not sexy
 
 #### auto-like-mobile-v2&#46;py
-Using the desktop chrome browser and selenium, get the url of the post to click the like button.
-Open the obtained url with the Instagram app of the Android emulator and click the Like button.  
+Using the `desktop chrome browser` and `selenium`, get the url of the post to click the like button.
+Open the obtained url with the `Instagram app` of the `Android emulator` and click the Like button.  
 
 *Problem* : If you send too many requests, your mobile will no longer be able to open the post's url for a while. (I do not know the exact period)
