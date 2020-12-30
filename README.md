@@ -6,12 +6,10 @@ If you use it a lot, your activity may be restricted for a certain period of tim
   
 Just Fun. Don't take it seriously.  
   
-오래 돌리거나 많이 사용하면 활동이 제한되거나 계정이 차단 될 수 있으니 그냥 재미로만 보세요 :) 
-
----
+오래 돌리거나 많이 사용하면 활동이 제한되거나 계정이 차단 될 수 있으니 그냥 재미로만 보세요 😀 
 
 ## What is Instagram?
-인스타그램은 언제든지 휴대 전화를 열어서 광고를 볼 수 있는 앱이다. 사진을 게시할 수 있는 기능도 들어있다.  
+인스타그램은 언제든지 휴대 전화를 열어서 광고를 볼 수 있는 어플리케이션 입니다. 사진을 게시할 수 있는 기능도 들어있습니다.  
 
 ## 코드 설명
 #### auto-like&#46;py
