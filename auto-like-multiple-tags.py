@@ -25,11 +25,7 @@ tag1 = "고양이"
 tag2 = ["좋반", "좋아요반사"]
 
 # search tag1
-search = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')
-search.send_keys('#%s' % tag1)
-time.sleep(2)
-search = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[4]/div/a[1]')
-search.send_keys(Keys.ENTER)
+driver.get('https://instagram.com/explore/tags/'+tag1)
 
 time.sleep(5)
 
@@ -68,13 +64,23 @@ while True:
     if do_like:
         like = driver.find_element_by_xpath('/html/body/div[5]/div[2]/div/article/div[3]/section/span/button')
         try:
+            alt = driver.find_element_by_xpath('/html/body/div[5]/div[2]/div/article/div[2]/div[1]/div[1]/div[2]/div/div/div/ul/li[2]/div/div/div/div[1]/div/img').get_attribute("alt")
+        except:
+            try:
+                alt = driver.find_element_by_xpath('/html/body/div[5]/div[2]/div/article/div[2]/div[1]/div[1]/div[1]/img').get_attribute("alt")
+            except:
+                alt = "video?"
+        try:
             likeBtn = driver.find_element_by_xpath('//*[@aria-label="좋아요"]')
         except:
             break
 
-        like.send_keys(Keys.ENTER)
-        print('%d like' % (i+1))
-        i += 1
+        if "소액" not in alt and "수익" not in alt and "대출" not in alt and "재테크" not in alt and "투자" not in alt and "유머" not in alt:
+            like.send_keys(Keys.ENTER)
+            print('%d like' % (i+1))
+            i += 1
+            if i >= 100:
+                break
         time.sleep(1.5)
 
     # get next feed

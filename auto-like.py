@@ -20,11 +20,7 @@ login_pw.send_keys(Keys.RETURN)
 time.sleep(4)
 
 # search tag
-search = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')
-search.send_keys('#좋반')
-time.sleep(2)
-search = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[4]/div/a[1]')
-search.send_keys(Keys.ENTER)
+driver.get('https://instagram.com/explore/tags/좋반')
 
 time.sleep(5)
 
